@@ -1,0 +1,65 @@
+body {
+  background: #c3cfe2;
+  line-height: 150%;
+}
+
+.social {
+  position: fixed;
+  top: 10em;
+  right: -3.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social__item {
+  color: #fff;
+  margin: 0.25em 0;
+  padding: 0.5em 2em 0.5em 0.5em;
+  font-size: 2em;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.social__item:hover {
+  -webkit-transform: translateX(-1em);
+          transform: translateX(-1em);
+  -webkit-transition: 0.25s ease-in;
+  transition: 0.25s ease-in;
+}
+
+.social__item:hover i {
+  -webkit-transition: 0.25s ease-in;
+  transition: 0.25s ease-in;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.social__item--twi {
+  background: #00aced;
+}
+
+.social__item--link {
+  background: #007bb6;
+}
+
+.social__item--fac {
+  background: #3b5998;
+}
+
+.social__item--git {
+  background: #333;
+}
+
+.social__item--ins {
+  background: #d6249f linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social__item--youtube {
+  background: #c4302b;
+}
+/*# sourceMappingURL=styles.css.map */

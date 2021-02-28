@@ -1,0 +1,68 @@
+$primaryclr: #c3cfe2;
+$secondaryclr: #fff;
+$transition: 0.25s ease-in;
+
+body {
+  background: $primaryclr;
+  line-height: 150%;
+}
+
+.social {
+  position: fixed;
+  top: 10em;
+  right: -3.5em;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    color: $secondaryclr;
+    margin: 0.25em 0;
+    padding: 0.5em 2em 0.5em 0.5em;
+    font-size: 2em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    &:hover {
+      transform: translateX(-1em);
+      transition: $transition;
+    }
+
+    &:hover i {
+      transition: $transition;
+      transform: rotate(360deg);
+    }
+
+    &--twi {
+      background: #00aced;
+    }
+
+    &--link {
+      background: #007bb6;
+    }
+
+    &--fac {
+      background: #3b5998;
+    }
+
+    &--git {
+      background: #333;
+    }
+
+    &--ins {
+      background: #d6249f
+        linear-gradient(
+          45deg,
+          #405de6,
+          #5851db,
+          #833ab4,
+          #c13584,
+          #e1306c,
+          #fd1d1d
+        );
+    }
+
+    &--youtube {
+      background: #c4302b;
+    }
+  }
+}
